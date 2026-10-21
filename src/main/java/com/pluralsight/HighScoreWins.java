@@ -17,7 +17,12 @@ public class HighScoreWins {
         int score2=Integer.parseInt(scores[1]);
 
 
-        System.out.print("Winner is "+((score1> score2) ?teams[0]:teams[1]));
+        if(!(score1==score2)) {
+            System.out.print("Winner is " + ((score1 > score2) ? teams[0] : teams[1]));
+        }
+        else{
+            System.out.println("it is a tie");
+        }
 
     }
 }
